@@ -1,1 +1,11 @@
-name: Ci/Cd
+name: Integration and Deployment
+on: 
+  push: 
+    branches:
+    - main
+    - production
+    - github_action
+  pull_request:
+    branches:
+    - main
+  workflow_dispatch:
